@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Videos | Liito Remisse</title>
+
+  <!-- FUENTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/videos.css">
+  <link rel="stylesheet" href="css/videos-video.css">
+
+  <!-- SDK de Supabase (solo para los comentarios) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header>
+
+    <a href="index.html" class="logo-text">
+      LIITO <span>REMISSE</span>
+    </a>
+
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Sobre Nosotros</a>
+      <a href="videos.html" class="active">Experiencia</a>
+    </nav>
+
+    <a href="flota.html#reservar" class="btn-reservar">
+      Reservar
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </header>
+
+
+  <!-- ================= MENÚ MÓVIL ================= -->
+
+  <div class="mobile-nav" id="mobile-nav">
+
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html">Sobre Nosotros</a>
+    <a href="videos.html" class="active">Videos</a>
+
+  </div>
+
+
+  <!-- ================= HERO ================= -->
+
+  <section class="page-hero">
+
+    <div class="hero-content">
+
+      <div class="page-hero-line"></div>
+
+      <div class="hero-eyebrow">
+        LIITO REMISSE
+      </div>
+
+      <h1>
+        Ecosistema
+        <em>Conectado</em>
+        <br>
+        en Imágenes
+      </h1>
+
+      <p>
+        Descubre la experiencia LIITO REMISSE a través de nuestro
+        contenido audiovisual. Seguridad, tecnología y confort
+        en cada trayecto.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= VIDEO DESTACADO ================= -->
+
+  <section class="section-featured">
+
+    <div class="eyebrow">
+      <span>Destacado</span>
+    </div>
+
+    <div
+      class="featured-card"
+      data-title="La Experiencia LIITO REMISSE"
+      data-cat="Video Institucional"
+      data-group="institucional"
+      data-glow="rgba(139,0,0,0.6)"
+      data-youtube="hYvOW54B7S0"
+      onclick="openLightbox(this)"
+    >
+
+      <div class="featured-thumb">
+
+        <div class="featured-thumb-bg"></div>
+
+        <div class="featured-thumb-glow"></div>
+
+        <div class="play-btn-big">
+
+          <svg viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+
+        </div>
+
+        <div class="cat-badge">
+          Video Institucional
+        </div>
+
+        <div class="duration-badge">
+          2:45
+        </div>
+
+      </div>
+
+
+      <div class="featured-info">
+
+        <h2>
+          La Experiencia
+          <br>
+          LIITO REMISSE
+        </h2>
+
+        <p>
+          Un viaje completo desde la reserva hasta el destino.
+          Descubre cómo cada detalle está diseñado para transformar
+          tu traslado en una experiencia única de lujo y confort ejecutivo.
+        </p>
+
+        <div class="featured-meta">
+
+          <div class="meta-item">
+
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+
+            2 min 45 seg
+
+          </div>
+
+
+          <div class="meta-item">
+
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+              <path d="M2.458 12C3.732 7.943 7.523 5 12 5 c4.478 0 8.268 2.943 9.542 7 -1.274 4.057-5.064 7-9.542 7 -4.477 0-8.268-2.943-9.542-7z"/>
+            </svg>
+
+            12.4K vistas
+
+          </div>
+
+
+          <div class="meta-item">
+
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M8 7V3"/>
+              <path d="M16 7V3"/>
+              <path d="M3 11h18"/>
+              <rect x="3" y="5" width="18" height="16" rx="2"/>
+            </svg>
+
+            Enero 2024
+
+          </div>
+
+        </div>
+
+
+        <button
+          class="watch-btn"
+          onclick="event.stopPropagation(); openLightbox(this.parentElement.parentElement)"
+        >
+
+          <svg viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+
+          Ver ahora
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= TODOS LOS VIDEOS ================= -->
+
+  <section class="section-videos">
+
+    <div class="eyebrow">
+      <span>Contenido</span>
+    </div>
+
+    <h2>
+      Todos los Videos
+    </h2>
+
+
+    <div class="video-grid">
+
+
+      <!-- VIDEO 1 -->
+
+      <div
+        class="video-card"
+        data-title="Seguridad y Monitoreo en Tiempo Real"
+        data-cat="Tecnología"
+        data-group="tecnologia"
+        data-glow="rgba(139,0,0,0.6)"
+        data-youtube="hYvOW54B7S0"
+        onclick="openLightbox(this)"
+      >
+
+        <div class="video-thumb thumb-1">
+
+          <div class="video-thumb-glow"></div>
+
+          <div class="play-btn-sm">
+            <svg viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+
+          <div class="video-cat">
+            Tecnología
+          </div>
+
+          <div class="video-duration">
+            1:58
+          </div>
+
+        </div>
+
+
+        <div class="video-info">
+
+          <h3>
+            Seguridad y Monitoreo en Tiempo Real
+          </h3>
+
+          <p>
+            Cómo funciona nuestro sistema de seguimiento GPS
+            y el ecosistema conectado que garantiza tu seguridad.
+          </p>
+
+          <div class="video-views">
+
+            <span class="vv-item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <path d="M2.458 12C3.732 7.943 7.523 5 12 5 c4.478 0 8.268 2.943 9.542 7 -1.274 4.057-5.064 7-9.542 7 -4.477 0-8.268-2.943-9.542-7z"/>
+              </svg>
+
+              8.2K
+            </span>
+
+            <span class="vv-item">
+              1:58
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- VIDEO 2 -->
+
+      <div
+        class="video-card"
+        data-title="Nuestros Conductores: Profesionalismo ante Todo"
+        data-cat="Equipo"
+        data-group="equipo-flota"
+        data-glow="rgba(201,168,76,0.6)"
+        data-youtube="hYvOW54B7S0"
+        onclick="openLightbox(this)"
+      >
+
+        <div class="video-thumb thumb-2">
+
+          <div class="video-thumb-glow"></div>
+
+          <div class="play-btn-sm">
+            <svg viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+
+          <div class="video-cat gold">
+            Equipo
+          </div>
+
+          <div class="video-duration">
+            3:12
+          </div>
+
+        </div>
+
+
+        <div class="video-info">
+
+          <h3>
+            Nuestros Conductores:
+            Profesionalismo ante Todo
+          </h3>
+
+          <p>
+            Detrás de cada traslado hay un profesional capacitado.
+            Conoce el proceso de selección y entrenamiento
+            de nuestros conductores.
+          </p>
+
+          <div class="video-views">
+
+            <span class="vv-item">
+              6.7K vistas
+            </span>
+
+            <span class="vv-item">
+              3:12
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- VIDEO 3 -->
+
+      <div
+        class="video-card"
+        data-title="App LIITO: Tu Viaje en la Palma de tu Mano"
+        data-cat="App"
+        data-group="tecnologia"
+        data-glow="rgba(139,0,0,0.6)"
+        data-youtube="hYvOW54B7S0"
+        onclick="openLightbox(this)"
+      >
+
+        <div class="video-thumb thumb-3">
+
+          <div class="video-thumb-glow"></div>
+
+          <div class="play-btn-sm">
+            <svg viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+
+          <div class="video-cat">
+            App
+          </div>
+
+          <div class="video-duration">
+            1:30
+          </div>
+
+        </div>
+
+
+        <div class="video-info">
+
+          <h3>
+            App LIITO: Tu Viaje en la Palma de tu Mano
+          </h3>
+
+          <p>
+            Tutorial de la aplicación móvil:
+            reservas, seguimiento en tiempo real
+            y gestión de pagos.
+          </p>
+
+          <div class="video-views">
+
+            <span class="vv-item">
+              15.3K vistas
+            </span>
+
+            <span class="vv-item">
+              1:30
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- VIDEO 4 -->
+
+      <div
+        class="video-card"
+        data-title="Tour por la Flota Premium LIITO"
+        data-cat="Flota"
+        data-group="equipo-flota"
+        data-glow="rgba(139,0,0,0.6)"
+        data-youtube="hYvOW54B7S0"
+        onclick="openLightbox(this)"
+      >
+
+        <div class="video-thumb thumb-4">
+
+          <div class="video-thumb-glow"></div>
+
+          <div class="play-btn-sm">
+            <svg viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+
+          <div class="video-cat gold">
+            Flota
+          </div>
+
+          <div class="video-duration">
+            4:05
+          </div>
+
+        </div>
+
+
+        <div class="video-info">
+
+          <h3>
+            Tour por la Flota Premium LIITO
+          </h3>
+
+          <p>
+            Recorre por dentro nuestros vehículos.
+            Lujo, tecnología y confort en cada detalle
+            de nuestra flota.
+          </p>
+
+          <div class="video-views">
+
+            <span class="vv-item">
+              9.8K vistas
+            </span>
+
+            <span class="vv-item">
+              4:05
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- VIDEO 5 -->
+
+      <div
+        class="video-card"
+        data-title="Traslado Aeropuerto: La Experiencia VIP"
+        data-cat="Servicio"
+        data-group="institucional"
+        data-glow="rgba(139,0,0,0.6)"
+        data-youtube="hYvOW54B7S0"
+        onclick="openLightbox(this)"
+      >
+
+        <div class="video-thumb thumb-5">
+
+          <div class="video-thumb-glow"></div>
+
+          <div class="play-btn-sm">
+            <svg viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+
+          <div class="video-cat">
+            Servicio
+          </div>
+
+          <div class="video-duration">
+            2:20
+          </div>
+
+        </div>
+
+
+        <div class="video-info">
+
+          <h3>
+            Traslado Aeropuerto:
+            La Experiencia VIP
+          </h3>
+
+          <p>
+            Desde la sala de espera hasta tu destino.
+            Traslados aeroportuarios con máxima puntualidad.
+          </p>
+
+          <div class="video-views">
+
+            <span class="vv-item">
+              11.1K vistas
+            </span>
+
+            <span class="vv-item">
+              2:20
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- VIDEO 6 -->
+
+      <div
+        class="video-card"
+        data-title="Corporativo: Grupos y Eventos Empresariales"
+        data-cat="Corporativo"
+        data-group="institucional"
+        data-glow="rgba(139,0,0,0.6)"
+        data-youtube="hYvOW54B7S0"
+        onclick="openLightbox(this)"
+      >
+
+        <div class="video-thumb thumb-6">
+
+          <div class="video-thumb-glow"></div>
+
+          <div class="play-btn-sm">
+            <svg viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+
+          <div class="video-cat">
+            Corporativo
+          </div>
+
+          <div class="video-duration">
+            3:40
+          </div>
+
+        </div>
+
+
+        <div class="video-info">
+
+          <h3>
+            Corporativo:
+            Grupos y Eventos Empresariales
+          </h3>
+
+          <p>
+            Soluciones de movilidad para equipos directivos,
+            eventos y convenciones.
+          </p>
+
+          <div class="video-views">
+
+            <span class="vv-item">
+              5.4K vistas
+            </span>
+
+            <span class="vv-item">
+              3:40
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CATEGORÍAS ================= -->
+
+  <section class="section-categories">
+
+    <div class="eyebrow">
+      <span>Categorías</span>
+    </div>
+
+    <div class="cat-grid">
+
+
+      <div
+        class="cat-card"
+        data-filter="institucional"
+        onclick="filterByCategory(this)"
+      >
+
+        <div class="cat-number">
+          01
+        </div>
+
+        <h3>
+          Institucional
+        </h3>
+
+        <p>
+          Videos que muestran la identidad, misión
+          y experiencia completa de LIITO REMISSE.
+        </p>
+
+        <span class="cat-count" data-count="institucional">
+          0 videos
+        </span>
+
+      </div>
+
+
+      <div
+        class="cat-card"
+        data-filter="tecnologia"
+        onclick="filterByCategory(this)"
+      >
+
+        <div class="cat-number">
+          02
+        </div>
+
+        <h3>
+          Tecnología
+        </h3>
+
+        <p>
+          Demos de la aplicación, monitoreo GPS,
+          conectividad y ecosistema digital.
+        </p>
+
+        <span class="cat-count" data-count="tecnologia">
+          0 videos
+        </span>
+
+      </div>
+
+
+      <div
+        class="cat-card"
+        data-filter="equipo-flota"
+        onclick="filterByCategory(this)"
+      >
+
+        <div class="cat-number">
+          03
+        </div>
+
+        <h3>
+          Equipo y Flota
+        </h3>
+
+        <p>
+          Conoce a los profesionales detrás del volante
+          y nuestra flota premium.
+        </p>
+
+        <span class="cat-count" data-count="equipo-flota">
+          0 videos
+        </span>
+
+      </div>
+
+    </div>
+
+    <button
+      class="cat-reset"
+      id="cat-reset"
+      onclick="resetCategoryFilter()"
+    >
+      Ver todos los videos
+    </button>
+
+  </section>
+
+
+  <!-- ================= COMENTARIOS ================= -->
+
+  <section class="section-comments">
+
+    <div class="eyebrow">
+      <span>Comunidad</span>
+    </div>
+
+    <h2>
+      Comentarios y Opiniones
+    </h2>
+
+    <p class="comments-subtitle">
+      Cuéntanos tu experiencia con LIITO REMISSE o déjanos tu opinión
+      sobre nuestros videos.
+    </p>
+
+    <form class="comment-form" id="comment-form">
+
+      <div class="comment-form-row">
+
+        <input
+          type="text"
+          id="comment-name"
+          placeholder="Tu nombre"
+          required
+          maxlength="60"
+        >
+
+      </div>
+
+      <div class="comment-form-row">
+
+        <textarea
+          id="comment-message"
+          placeholder="Escribe tu comentario..."
+          required
+          maxlength="500"
+          rows="4"
+        ></textarea>
+
+      </div>
+
+      <button type="submit" class="comment-submit" id="comment-submit">
+        Publicar comentario
+      </button>
+
+      <p class="comment-status" id="comment-status"></p>
+
+    </form>
+
+    <div class="comments-list" id="comments-list">
+
+      <p class="comments-empty" id="comments-empty">
+        Cargando comentarios...
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= LIGHTBOX ================= -->
+
+  <div class="lightbox" id="lightbox">
+
+    <div class="lightbox-inner">
+
+      <button
+        class="lightbox-close"
+        id="lightbox-close"
+      >
+        ×
+      </button>
+
+
+      <div class="lightbox-player">
+
+        <div class="lightbox-player-bg">
+
+          <div
+            class="lightbox-player-glow"
+            id="lightbox-glow"
+          ></div>
+
+        </div>
+
+        <div
+          class="lightbox-video"
+          id="lightbox-video"
+        ></div>
+
+        <div
+          class="lightbox-player-text"
+          id="lightbox-content"
+        >
+
+          <div class="lp-icon">
+            ▶
+          </div>
+
+          <h3 id="lightbox-ptitle"></h3>
+
+          <p>
+            Próximamente disponible en nuestra plataforma
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="lightbox-info">
+
+        <div>
+
+          <div
+            class="lightbox-title"
+            id="lightbox-ltitle"
+          ></div>
+
+          <div
+            class="lightbox-cat"
+            id="lightbox-lcat"
+          ></div>
+
+        </div>
+
+
+        <div class="lightbox-share">
+
+          <button class="share-btn">
+            Compartir
+          </button>
+
+          <a
+            href="flota.html#reservar"
+            class="share-btn"
+          >
+            Reservar ahora
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+
+        <a href="index.html" class="logo-text">
+          LIITO <span>REMISSE</span>
+        </a>
+
+        <p>
+          Redefiniendo el transporte premium con
+          tecnología, seguridad y sofisticación.
+        </p>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h4>
+          Empresa
+        </h4>
+
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="videos.html">Experiencia</a>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h4>
+          Servicios
+        </h4>
+
+        <a href="videos.html">Flota Premium</a>
+        <a href="index.html#reservar">Reservas</a>
+        <a href="videos.html">Traslados VIP</a>
+        <a href="videos.html">Aeropuerto</a>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h4>
+          Contacto
+        </h4>
+
+        <a href="tel:+51933907267">
+          +51 933 907 267
+        </a>
+
+        <a href="tel:+51941532216">
+          +51 941 532 216
+        </a>
+
+        <a href="mailto:Liitoremissevip@gmail.com">
+          Liitoremissevip@gmail.com
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 LIITO REMISSE.
+        <span>Premium Mobility.</span>
+      </p>
+
+      <p>
+        Todos los derechos reservados.
+      </p>
+
+    </div>
+
+  </footer>
+
+  <!-- JAVASCRIPT EXTERNO -->
+  <script src="js/videos.js"></script>
+
+</body>
+</html>

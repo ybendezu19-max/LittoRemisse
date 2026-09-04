@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Liito Remisse – Premium Automotive</title>
+  <!-- Fuentes de Google (unificadas en una sola solicitud) -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <!-- Enlace al archivo CSS externo -->
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="index.html" class="logo-text">LIITO <span>REMISSE</span></a>
+
+  <nav id="desktop-nav">
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html">Sobre Nosotros</a>
+    <a href="videos.html">Experiencia</a>
+  </nav>
+
+  <a href="https://wa.me/989906792" target="_blank" rel="noopener noreferrer" class="btn-red mobile-btn-reservar">Reservar</a>
+
+  <button class="hamburger" id="hamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Inicio</a>
+  <a href="nosotros.html">Sobre Nosotros</a>
+  <a href="videos.html">Experiencia</a>
+  <a href="https://wa.me/989906792" target="_blank" rel="noopener noreferrer" class="btn-red mobile-btn-reservar">Reservar</a>
+</div>
+
+<!-- HERO SLIDER -->
+<section class="hero">
+  <div class="slides-wrapper" id="slides-wrapper">
+
+    <!-- Slide 1 -->
+    <div class="slide slide-1">
+      <div class="slide-deco"></div>
+      <div class="slide-logo-big">LIITO</div>
+      <div class="slide-content">
+        <div class="vip-badge">Servicio Ejecutivo</div>
+        <h1>Tu viaje,<br><em>nuestra prioridad</em></h1>
+        <p>Choferes profesionales y vehículos preparados para brindarte un servicio seguro, cómodo y puntual.</p>
+        <div class="slide-btns">
+          <a href="videos.html" class="btn-outline">Conocer el servicio</a>
+          <a href="https://wa.me/989906792" target="_blank" rel="noopener noreferrer" class="btn-red">Reservar</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide slide-2">
+      <div class="slide-deco"></div>
+      <div class="slide-logo-big">REMISSE</div>
+      <div class="slide-content">
+        <div class="vip-badge">Momentos Especiales</div>
+        <h1>Haz de cada<br><em>momento algo único</em></h1>
+        <p>Acompañamos tus momentos más importantes con un servicio exclusivo para bodas, celebraciones y eventos especiales.</p>
+        <div class="slide-btns">
+          <a href="videos.html" class="btn-outline">Ver servicios</a>
+          <a href="https://wa.me/989906792" target="_blank" rel="noopener noreferrer" class="btn-red">Reservar</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide slide-3">
+      <div class="slide-deco"></div>
+      <div class="slide-logo-big">ELITE</div>
+      <div class="slide-content">
+        <div class="vip-badge">Servicio Premium</div>
+        <h1>Siempre listos<br><em>para ti</em></h1>
+        <p>Nuestra flota está preparada para ofrecerte comodidad, puntualidad y atención personalizada en cada recorrido.</p>
+        <div class="slide-btns">
+          <a href="videos.html" class="btn-outline">Ver nuestra flota</a>
+          <a href="https://wa.me/989906792" target="_blank" rel="noopener noreferrer" class="btn-red">Reservar</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="slide-arrow prev" id="prev-btn" aria-label="Anterior">&#10094;</button>
+  <button class="slide-arrow next" id="next-btn" aria-label="Siguiente">&#10095;</button>
+
+  <div class="dots" id="dots">
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+</section>
+
+<!-- FLEET MINI SLIDER -->
+<section class="section-fleet">
+  <div class="fleet-header">
+    <div class="eyebrow"><span>Nuestra Flota</span></div>
+    <h2>Conoce Nuestra<br>Flota</h2>
+  </div>
+
+  <div class="fleet-slider">
+    <button class="fleet-arrow fleet-prev" id="fleet-prev" aria-label="Ver autos anteriores">&#10094;</button>
+
+    <div class="fleet-track" id="fleet-track">
+      <div class="fleet-card">
+        <img src="img/auto-1.jpg" alt="Toyota Fortuner" loading="lazy">
+        <div class="fleet-card-info">
+          <h3>Toyota Fortuner</h3>
+          <span>Camioneta SUV</span>
+        </div>
+      </div>
+      <div class="fleet-card">
+        <img src="img/auto-2.jpg" alt="Toyota RAV4" loading="lazy">
+        <div class="fleet-card-info">
+          <h3>Toyota RAV4</h3>
+          <span>SUV</span>
+        </div>
+      </div>
+      <div class="fleet-card">
+        <img src="img/auto-4.jpg" alt="Hyundai Tucson" loading="lazy">
+        <div class="fleet-card-info">
+          <h3>Hyundai Tucson</h3>
+          <span>SUV</span>
+        </div>
+      </div>
+      <div class="fleet-card">
+        <img src="img/auto-3.jpg" alt="Hyundai Santa Fe" loading="lazy">
+        <div class="fleet-card-info">
+          <h3>Hyundai Santa Fe</h3>
+          <span>SUV</span>
+        </div>
+      </div>
+      <div class="fleet-card">
+        <img src="img/auto-5.jpg" alt="Kia Sorento" loading="lazy">
+        <div class="fleet-card-info">
+          <h3>Kia Sorento</h3>
+          <span>SUV</span>
+        </div>
+      </div>
+      <div class="fleet-card">
+        <img src="img/auto-6.jpg" alt="Kia Sportage" loading="lazy">
+        <div class="fleet-card-info">
+          <h3>Kia Sportage</h3>
+          <span>SUV</span>
+        </div>
+      </div>
+      <div class="fleet-card">
+        <img src="img/auto-7.jpg" alt="Mercedes-Benz Sprinter" loading="lazy">
+        <div class="fleet-card-info">
+          <h3>Mercedes-Benz Sprinter</h3>
+          <span>Camioneta</span>
+        </div>
+      </div>
+      <div class="fleet-card">
+        <img src="img/auto-8.jpg" alt="Renault Master" loading="lazy">
+        <div class="fleet-card-info">
+          <h3>Renault Master</h3>
+          <span>Camioneta</span>
+        </div>
+      </div>
+      <div class="fleet-card">
+        <img src="img/auto-9.jpg" alt="BMW BMW Premium" loading="lazy">
+        <div class="fleet-card-info">
+          <h3>BMW Premium</h3>
+          <span>Auto premium</span>
+        </div>
+      </div>
+    </div>
+
+    <button class="fleet-arrow fleet-next" id="fleet-next" aria-label="Ver más autos">&#10095;</button>
+  </div>
+</section>
+
+<!-- CARDS GRID -->
+<section class="section-cards">
+  <div class="cards-header">
+    <div>
+      <div class="eyebrow"><span>Servicios</span></div>
+      <h2>Nuestras<br>Ventajas</h2>
+    </div>
+    <p>Cada detalle diseñado para superar tus expectativas de movilidad premium.</p>
+  </div>
+
+  <div class="cards-grid">
+    <div class="card">
+      <svg class="card-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+      </svg>
+      <h3>Máximo Rendimiento</h3>
+      <p>Optimización técnica constante para asegurar puntualidad y seguridad en cada reserva.</p>
+    </div>
+
+    <div class="card">
+      <svg class="card-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+      </svg>
+      <h3>App Móvil</h3>
+      <p>Próximamente nuevas plataformas y aplicación móvil para el control total de tu viaje.</p>
+    </div>
+
+    <div class="card">
+      <svg class="card-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+      </svg>
+      <h3>Experiencia VIP</h3>
+      <p>Servicio de remisión premium con atención personalizada y vehículos de alta gama.</p>
+    </div>
+
+    <div class="card">
+      <svg class="card-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+        <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+      </svg>
+      <h3>Seguimiento GPS</h3>
+      <p>Monitoreo en tiempo real de tu unidad asignada desde el momento de la confirmación.</p>
+    </div>
+
+    <div class="card">
+      <svg class="card-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+      </svg>
+      <h3>Puntualidad Garantizada</h3>
+      <p>Comprometidos con tu tiempo. Cada traslado es planificado con máxima precisión.</p>
+    </div>
+
+    <div class="card">
+      <svg class="card-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+      </svg>
+      <h3>Atención 24/7</h3>
+      <p>Soporte y atención al cliente disponible en todo momento para garantizar tu tranquilidad.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-cta has-bg" style="--cta-img: url('../img/img21.PNG');">
+  <div class="eyebrow"><span>Reserva Ahora</span></div>
+  <h2>Eleva Tu Experiencia<br>de Movilidad</h2>
+  <p>Únete a nuestra comunidad de clientes premium. El transporte de lujo que mereces, siempre disponible.</p>
+  <div class="cta-btns">
+    <a href="https://wa.me/989906792" target="_blank" rel="noopener noreferrer" class="btn-red cta-btn-large">Hacer una Reserva</a>
+    <a href="nosotros.html" class="btn-outline cta-btn-large">Sobre Nosotros</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="logo-text">LIITO <span class="footer-logo-span">REMISSE</span></a>
+      <p>Redefiniendo el transporte premium con tecnología y sofisticación. Movilidad de lujo en cada traslado.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="videos.html">Experiencia</a>
+    </div>
+    <div class="footer-col">
+      <h4>Servicios</h4>
+      <a href="videos.html">Flota Premium</a>
+      <a href="videos.html">Traslados VIP</a>
+      <a href="videos.html">Aeropuerto</a>
+      <a href="videos.html">Corporativo</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="privacidad.html">Privacidad</a>
+      <a href="terminos.html">Términos</a>
+      <a href="cookies.html">Cookies</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 LIITO REMISSE. <span>Premium Automotive Performance.</span></p>
+    <p>Diseño: Litto Digital</p>
+  </div>
+</footer>
+
+<script src="js/slider.js"></script>
+</body>
+</html>
